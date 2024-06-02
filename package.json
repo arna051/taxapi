@@ -1,13 +1,13 @@
 {
   "name": "taxapi",
-  "version": "1.0.1",
-  "description": "A Node.js module for server-side applications.",
+  "version": "1.0.3",
+  "description": "A Node.js module for iranian tax api (سامانه مودیان مالیاتی)",
   "main": "dist/taxapi.js",
   "scripts": {
     "build": "tsc && esbuild src/v1/index.ts --bundle --outfile=dist/taxapi.js --format=cjs --sourcemap --platform=node",
     "publish": "npm publish"
   },
-  "keywords": ["nodejs", "module", "server-side", "typescript"],
+  "keywords": ["nodejs", "tax api", "taxAPI", "moadian", "مودیان", "سامانه مودیان", "iranian tax api", "hippogriff"],
   "author": "Your Name",
   "license": "ISC",
   "repository": {
