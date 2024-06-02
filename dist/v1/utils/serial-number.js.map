@@ -1,0 +1,1 @@
+{"version":3,"file":"serial-number.js","sourceRoot":"","sources":["../../../src/v1/utils/serial-number.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;AAAA,+CAAiC;AAEjC,SAAgB,eAAe,CAAC,GAAW;IACvC,MAAM,WAAW,GAAG,MAAM,CAAC,WAAW,CAAC,CAAC,CAAC,CAAC;IAC1C,MAAM,YAAY,GAAG,WAAW,CAAC,YAAY,CAAC,CAAC,CAAC,CAAC;IACjD,OAAO,YAAY,GAAG,GAAG,CAAC;AAC9B,CAAC;AAJD,0CAIC"}

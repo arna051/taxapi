@@ -1,10 +1,11 @@
 {
-  "name": "moadian",
-  "version": "1.0.0",
+  "name": "taxapi",
+  "version": "1.0.1",
   "description": "A Node.js module for server-side applications.",
   "main": "dist/taxapi.js",
   "scripts": {
-    "build": "esbuild src/v1/index.ts --bundle --outfile=dist/taxapi.js --format=cjs --sourcemap --platform=node"
+    "build": "tsc && esbuild src/v1/index.ts --bundle --outfile=dist/taxapi.js --format=cjs --sourcemap --platform=node",
+    "publish": "npm publish"
   },
   "keywords": ["nodejs", "module", "server-side", "typescript"],
   "author": "Your Name",
