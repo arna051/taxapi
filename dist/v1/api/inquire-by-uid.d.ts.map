@@ -1,0 +1,1 @@
+{"version":3,"file":"inquire-by-uid.d.ts","sourceRoot":"","sources":["../../../src/v1/api/inquire-by-uid.ts"],"names":[],"mappings":"AAGA,OAAO,EAAE,SAAS,EAAE,MAAM,cAAc,CAAC;AAEzC,OAAO,EAAE,QAAQ,EAAE,MAAM,sBAAsB,CAAC;AAEhD,wBAAsB,YAAY,CAAC,IAAI,EAAE,MAAM,EAAE,QAAQ,EAAE,MAAM,EAAE,KAAK,EAAE,MAAM,EAAE,GAAG,EAAE,SAAS,EAAE,IAAI,EAAE,MAAM,EAAE,GAAG,OAAO,CAAC,QAAQ,CAAC,eAAe,CAAC,CAwCnJ"}
