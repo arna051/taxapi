@@ -1,0 +1,28 @@
+{
+  "name": "moadian",
+  "version": "1.0.0",
+  "description": "A Node.js module for server-side applications.",
+  "main": "dist/taxapi.js",
+  "scripts": {
+    "build": "esbuild src/v1/index.ts --bundle --outfile=dist/taxapi.js --format=cjs --sourcemap --platform=node"
+  },
+  "keywords": ["nodejs", "module", "server-side", "typescript"],
+  "author": "Your Name",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/moadian"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "axios": "^1.5.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.10",
+    "ts-node": "10.9.1",
+    "typescript": "^5.3.3"
+  }
+}
