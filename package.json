@@ -1,13 +1,22 @@
 {
   "name": "taxapi",
-  "version": "1.0.5",
-  "description": "A Node.js module for iranian tax api (سامانه مودیان مالیاتی)",
+  "version": "1.1.0",
+  "description": "A Node.js module for Iranian tax API (سامانه مودیان مالیاتی)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
-  "keywords": ["nodejs", "tax api", "taxAPI", "moadian", "مودیان", "سامانه مودیان", "iranian tax api", "hippogriff"],
+  "keywords": [
+    "nodejs",
+    "tax api",
+    "taxAPI",
+    "moadian",
+    "مودیان",
+    "سامانه مودیان",
+    "iranian tax api",
+    "hippogriff"
+  ],
   "author": "hussain nazarnejad",
   "license": "ISC",
   "repository": {
@@ -22,6 +31,7 @@
     "uuid": "^9.0.1"
   },
   "devDependencies": {
+    "@types/uuid": "^9.0.8",
     "ts-node": "10.9.1",
     "typescript": "^5.3.3"
   }

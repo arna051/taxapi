@@ -24,6 +24,8 @@ yarn add taxapi
 6. [Inquire Invoices](#inquire-invoices)  
 7. [Inquire Client Economic Code](#inquire-client-economic-code)  
 8. [Inquire Fiscal ID](#inquire-fiscal-id)  
+9. [Utils](#uitls)  
+9. [Types](#types)  
 
 
 ## Introduction
@@ -142,6 +144,40 @@ const api = new TaxApiV1('[pem file path or content]', '[fiscal id]', '[economic
 const response = await api.getFiscalId(token)
 
 const {economicCode, fiscalStatus, nameTrade, saleThreshold} = response.result.data
+~~~
+
+## Utils
+
+~~~typescript
+import { generateTaxId, getRandomSerialDecimal } from "taxapi";
+
+// if your client doesn't provide initial serial number
+const initialSerialNumber = getRandomSerialDecimal();
+
+//replace new Date() with date object of invoice date
+const taxid = generateTaxId('fiscalId', new Date(), initialSerialNumber)
+
+//convert serial to taxApi serial
+const inno = initialSerialNumber.toString(16).padStart(10, '0')
+~~~
+
+
+## Types
+
+~~~typescript
+import { Version1, TaxApi_v1_InvoiceBody, TaxApi_v1_InvoiceHeader, TaxApi_v1_InvoicePayment } from "taxapi";
+
+
+const header: TaxApi_v1_InvoiceHeader = {}
+const body: TaxApi_v1_InvoiceBody = []
+const payments: TaxApi_v1_InvoicePayment = []
+
+
+const fullInvoice: Version1.TaxApiInvoice = {
+    header,
+    body,
+    payments: []
+}
 ~~~
 
 

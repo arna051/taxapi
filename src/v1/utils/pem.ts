@@ -145,7 +145,7 @@ export class PemReader {
         }
     }
 
-    decode(encryptedString, keyHex, ivHex) {
+    decode(encryptedString: string, keyHex: string, ivHex: string) {
         let data = '';
         let verified = false;
         let error = '';
@@ -184,7 +184,7 @@ export class PemReader {
 
 
 
-    rexor(buffer, key) {
+    rexor(buffer: Buffer, key: any) {
         const result = Buffer.alloc(buffer.length);
         for (let i = 0; i < buffer.length; i++) {
             result[i] = buffer[i] ^ key[i % key.length];

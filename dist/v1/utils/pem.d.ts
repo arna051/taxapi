@@ -22,11 +22,11 @@ export declare class PemReader {
         symmetricKey: string;
         key: string;
     };
-    decode(encryptedString: any, keyHex: any, ivHex: any): {
+    decode(encryptedString: string, keyHex: string, ivHex: string): {
         verified: boolean;
         data: string;
         error: string;
     };
-    rexor(buffer: any, key: any): Buffer;
+    rexor(buffer: Buffer, key: any): Buffer;
 }
 //# sourceMappingURL=pem.d.ts.map
